@@ -21,6 +21,8 @@ namespace PizzaShopManagement.Forms
             timerTimer.Start();
             PanelWidth = panelLeft.Width;
             isCollapsed = false;
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -67,10 +69,17 @@ namespace PizzaShopManagement.Forms
             panelSide.Top = btn.Top;
             panelSide.Height = btn.Height;
         }
+        private void AddControlsToPanel(Control c)
+        {
+            c.Dock = DockStyle.Fill;
+            panelControls.Controls.Add(c);
 
+        }
         private void btnHome_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnHome);
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void btnCadastro_Click(object sender, EventArgs e)
