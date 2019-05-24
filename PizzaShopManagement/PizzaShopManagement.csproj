@@ -65,6 +65,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersControl\UC_Cadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\UC_Cadastro.Designer.cs">
+      <DependentUpon>UC_Cadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersControl\UC_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UsersControl\UC_Cadastro.resx">
+      <DependentUpon>UC_Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsersControl\UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +113,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\alarm_clock_32px.png" />
+    <Content Include="img\cadastro\icons8_client_management_48px_1.png" />
+    <Content Include="img\cadastro\icons8_doctor_filled_48px.png" />
+    <Content Include="img\cadastro\icons8_gender_neutral_user_filled_48px.png" />
+    <Content Include="img\cadastro\icons8_motorcycle_filled_48px.png" />
     <Content Include="img\card_in_use_32px.png" />
     <Content Include="img\close_window_26px.png" />
     <Content Include="img\dog_house_26px.png" />
@@ -111,6 +124,7 @@
     <Content Include="img\icons8-cozinheiro-96.png" />
     <Content Include="img\icons8-desligar-48.png" />
     <Content Include="img\icons8-linux-server-48.png" />
+    <Content Include="img\icons8_client_management_50px.png" />
     <Content Include="img\icons8_home_32px.png" />
     <Content Include="img\maintenance_32px.png" />
     <Content Include="img\menu_32px.png" />

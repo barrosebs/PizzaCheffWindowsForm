@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzaShopManagement.UsersControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,6 +73,7 @@ namespace PizzaShopManagement.Forms
         private void AddControlsToPanel(Control c)
         {
             c.Dock = DockStyle.Fill;
+            panelControls.Controls.Clear();
             panelControls.Controls.Add(c);
 
         }
@@ -85,7 +87,8 @@ namespace PizzaShopManagement.Forms
         private void btnCadastro_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnCadastro);
-
+            UC_Cadastro uch = new UC_Cadastro();
+            AddControlsToPanel(uch);
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
