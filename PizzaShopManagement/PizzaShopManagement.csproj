@@ -65,6 +65,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersControl\SubUC\UC_Usuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\SubUC\UC_Usuario.Designer.cs">
+      <DependentUpon>UC_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersControl\UC_Cadastro.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UsersControl\SubUC\UC_Usuario.resx">
+      <DependentUpon>UC_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsersControl\UC_Cadastro.resx">
       <DependentUpon>UC_Cadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,9 +122,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\alarm_clock_32px.png" />
+    <Content Include="img\cadastro\icons8_add_30px.png" />
+    <Content Include="img\cadastro\icons8_add_48px_1.png" />
     <Content Include="img\cadastro\icons8_client_management_48px_1.png" />
     <Content Include="img\cadastro\icons8_doctor_filled_48px.png" />
     <Content Include="img\cadastro\icons8_gender_neutral_user_filled_48px.png" />
+    <Content Include="img\cadastro\icons8_google_images_48px.png" />
+    <Content Include="img\cadastro\icons8_google_images_filled_100px_4.png" />
+    <Content Include="img\cadastro\icons8_google_images_filled_48px_2.png" />
     <Content Include="img\cadastro\icons8_motorcycle_filled_48px.png" />
     <Content Include="img\card_in_use_32px.png" />
     <Content Include="img\close_window_26px.png" />
